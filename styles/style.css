@@ -1,0 +1,284 @@
+/*****************/ 
+/* STYLE GENERAL */
+/*****************/
+
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+
+main {
+    flex: 1;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    max-width: 1280px;
+    margin: auto;
+
+    font-family: sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/**********/
+/* ENTETE */
+/**********/ 
+
+.entete {
+    background-color: #38a3a5;
+    padding: 1em 0;
+
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.entete a {
+    color: #FFFFFF;
+    font-size: 3em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/********/
+/* MENU */
+/********/ 
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    border-bottom: 3px solid #38a3a5;
+    padding: 2em 0;
+    margin: 0; 
+    
+    list-style-type: none;
+}
+
+.menu a {
+    display: block;
+
+    background-color: #38a3a5;  
+    padding: 0.75em 2em;
+
+    color: #FFFFFF;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+}
+
+.menu > li > a:hover {
+    opacity: 0.9;
+}
+
+.sousMenu {
+    position: absolute;
+
+    display: none;
+    z-index: 998;
+    
+    width: 100%;
+
+    padding: 0;
+
+    list-style-type: none;
+}
+
+.sousMenu a {
+    background-color: #38a3a5;
+    font-size: 0.9em;
+    text-align: left;
+}
+
+.sousMenu a:hover {
+    background-color: #4CACAE;
+}
+
+.menuDeroulant {
+    position: relative;
+
+    width: 20%;
+}
+
+.menuDeroulant:hover .sousMenu {
+    display: block;
+}
+
+/*************/
+/* RECHERCHE */
+/*************/
+
+.recherche {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+
+    margin-top: 1em;
+}
+
+.recherche label {
+    margin:0;
+}
+
+.recherche input[type="submit"] {
+    margin: 0;
+}
+
+/*********/
+/* TABLE */
+/*********/ 
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+caption {
+    margin: 1em 0;
+  
+    font-size: 1.5em;
+    font-weight: bold;
+    font-style: italic;
+}
+
+th, td {
+    padding: 0.5em;
+
+    border: 1px solid #38a3a5;
+}
+
+th {   
+    background-color:#38a3a5;
+
+    color: #FFFFFF;
+}
+
+tr:nth-child(odd) {
+    background-color: #edf6f9;
+}
+
+tr:hover {
+    background-color: #e9ecef;
+}
+
+.derniereColonne {
+    text-align: center;
+    text-decoration: none;
+}
+
+.emprunt span {
+    background-color: #57cc99;
+    border-radius: 0.5em;
+    padding: 0.1em 1em;
+    
+    color: #FFFFFF;
+}
+
+.emprunt a {
+    background-color: coral;
+    border-radius: 0.5em;
+    padding: 0.1em 1em;
+    
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.emprunt a:hover {
+    opacity: 0.9;
+}
+
+.fa-pen-to-square {
+    color: #57cc99;
+}
+
+.fa-trash {
+    color: #ef233c;
+}
+
+/**************/
+/* FORMULAIRE */
+/**************/
+
+h1 {
+    margin: 1em 0;
+  
+    font-size: 1.5em;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+}
+
+form {
+    padding: 1em 0em;
+    
+    background-color: #edf6f9;
+}
+
+.champ {
+    display: flex;
+    flex-direction: column;
+
+    width: 30%;
+    margin: auto;
+}
+
+label {
+    margin-bottom: 0.5em;
+    margin-left: 1em;
+
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    border: none;
+    padding: 0.5em;
+}
+
+textarea {
+    flex: 1;
+    resize: none;
+}
+
+input[type="submit"] {
+    display: flex;
+    margin: auto;
+
+    background-color: #38a3a5;
+    border-radius: 0.5em;
+    padding: 0.75em 2em;
+    margin-top: 1em;
+ 
+    color:#FFFFFF;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    opacity: 0.9;
+}
+
+/**********/
+/* FOOTER */
+/**********/
+
+footer {
+    background-color: #38a3a5;
+    padding: 1em 0;
+    margin-top: 1em;
+     
+    color: #FFFFFF;
+    text-align: center;
+}
